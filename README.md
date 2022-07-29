@@ -1,2 +1,3 @@
 # githubUsersAPIProject
-*[link](#https://frankgithubusers.netlify.app/)*
+
+<a href="https://frankgithubusers.netlify.app/">frankgithubusers.netlify.app</a>
