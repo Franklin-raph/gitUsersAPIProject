@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background-color: rgb(117, 117, 117);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ri-github-fill{
+    font-size: 40px !important;
+}
+
+.get_my_profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.getUserBtn{
+    background-color: #DAF5C5;
+    color: rgb(0, 0, 0);
+    padding:5px 16px;
+    border: none;
+    border-radius: 50px;
+}
+
+input[type='text']{
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding:5px 10px;
+}
+
+input[type='search']{
+    padding: 5px;
+    width: 25%;
+    border: 1px solid rgb(182, 182, 182);
+    box-shadow: 1px 1px 2px grey;
+}
+
+input[type='search']:focus, input[type='text']:focus{
+    outline: 0 !important;
+    /* border: 0 !important; */
+}
+
+.user_card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: .4rem;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    box-shadow: 2px 2px 3px rgb(214, 214, 214);
+    border-radius: 0;
+    color: rgb(66, 66, 66);
+    overflow: hidden;
+}
+
+.card_img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.link{
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.hider{
+    display: none;
+}
+
+.loadSpinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.myGithubLink{
+    background-color: rgb(194,238,159, .6);
+    padding: 5px 16px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:768px) {
+    .get_my_profile{
+        margin-left: 3rem;
+        display: grid;
+        place-content: center;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .header_content h3{
+        display: none;
+    }
+
+    .user_card h4{
+        font-size: 16px;
+    }
+
+    .link{
+        font-size: 14px;
+    }
+
+    .card_img{
+        height: 60px;
+        width: 60px;
+    }
+
+    input[type='search']{
+        width: 50%;
+    }
+
+    .get_my_profile{
+        margin-left: 0;
+    }
+
+    input[type="submit"]{
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    
+}
